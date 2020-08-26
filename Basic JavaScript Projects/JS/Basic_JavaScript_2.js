@@ -12,3 +12,12 @@ function myFunction() {
     sentence += "a lot from this book!";
     document.getElementById("Concatenate").innerHTML = sentence;
 }
+
+var x = myFunction1(4, 3);    //this section is not working
+document.getElementById("demo1").innerHTML = x
+
+function myFunction1(p1, p2) {
+  return p1 * p2;
+}
+
+
