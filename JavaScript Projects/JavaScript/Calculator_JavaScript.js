@@ -67,7 +67,7 @@ Update_Display();
 const keys = document.querySelector('.calculator-keys');                //this section monitors button clicks.
 keys.addEventListener('click', (event) => {
     const { target } = event;
-    if (!target.matches ('buttton')) {
+    if (!target.matches ('button')) {
         return;
     } 
     if (target.classList.contains('operator')) {
