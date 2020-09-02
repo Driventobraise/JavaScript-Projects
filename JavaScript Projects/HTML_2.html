@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Form</title>
+        <link rel="stylesheet" type="text/css" href="CSS/CSS_1.css">
+        <script src="JavaScript/JavaScript_2.js" defer></script>
+    </head>
+        <body>
+            <h3>Basic HTML Form</h3>
+            <br>
+            <div>
+                <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                    
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+                    <label for="Email">Email</label>
+                    <input type="text" id="Email" name="email" placeholder="Your email..">
+
+                    <input type="submit" value="Submit">
+                
+                </form>
+            </div>
+        </body>
+</html>
