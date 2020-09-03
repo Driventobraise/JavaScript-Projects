@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The FireBox |Learn and Eat BBQ</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width= device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/one_page_website.css">
+		<script src="JS/one_page_website.js" defer></script>
+	</head>
+	<body>
+	
+	<!-- NAV -->
+		<div>
+			<div>
+				<nav>
+					<a href="#home">HOME</a>|
+					<a href="#photo">PHOTOS</a>|
+					<a href="#videos">VIDEO</a>|
+					<a href="#contact">RESERVATIONS</a>|
+				</nav>
+			</div>
+		</div>
+		<!-- END NAV -->
+		
+		<!-- HOME -->
+		<div id="home">
+			<div>
+				<span><h1>The FireBox<h1></span>
+				<p>Come to Learn and Eat amazing BBQ!<p>
+			</div>
+		</div>
+		<!-- END HOME -->
+		<!-- Images used to open lightbox -->
+		<div class="row">
+			<div class="column">
+				<img src="./Images/ThumbBBQ/BBQ_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./Images/ThumbBBQ/BBQ_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./Images/ThumbBBQ/BBQ_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			</div>
+		</div>
+
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		  
+			  <div class="mySlides">
+				<div class="numbertext">1 / 3</div>
+				<img src="./Images/ThumbBBQ/BBQ_1_wide.png" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 3</div>
+				<img src="./Images/ThumbBBQ/BBQ_2_wide.png" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 3</div>
+				<img src="./Images/ThumbBBQ/BBQ_3_wide.png" style="width:100%">
+			  </div>
+			  
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+		  
+		  
+			  <div class="column">
+				<img class="demo cursor" src="./Images/ThumbBBQ/BBQ_1_wide.png" style="width:100%" onclick="currentSlide(1)" alt="bbq1">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./Images/ThumbBBQ/BBQ_2_wide.png" style="width:100%" onclick="currentSlide(2)" alt="bbq2">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./Images/ThumbBBQ/BBQ_3_wide.png" style="width:100%" onclick="currentSlide(3)" alt="bbq3">
+			  </div>
+			</div>
+		  </div>
+	<!-- VIDEO -->
+	<section>
+		<div id="videos">
+			<div>
+			<h1>VIDEO</h1>
+				<h2><span>Join us this week to learn how to make your brisket jiggle!</span><br />Bring your Appetite!|yes this is me at my old job|</h2>
+					<video width="560" height="315" controls>
+						<source src="./Images/video/BBQ_Vid1.mp4" type="video/mp4">
+					</video>
+			</div>
+		</div>
+	</section>
+	<!-- END VIDEO -->
+	
+	 <!-- RSVP -->
+		 <section>
+			<div id="contact">
+				<div>
+					<h1>Reservations</h1>
+					<div>
+						<h2><span>Your Tast adventure begings here!.</span>
+							<br />Reserve your spot today!
+						</h2>
+						<p>
+							Please provide us with your basic contact information.
+						</p>
+						<div class="reservation">
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="First Name">
+								<input class="rsvp" type="text" value="Last Name">
+								<input class="rsvp" type="text" value="Email Address">
+								<input class="rsvp" type="text" value="Phone Number">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<input type="submit" valu e="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END RSVP -->
+		
+		<!-- END FOOTER -->
+		<div>
+			www.TheFireBox.com &nbsp;|&nbsp; &copy; 2020
+		</div>
+		<!-- END FOOTER-->
+		
+	</body>
+	
+</html>
